@@ -2,7 +2,6 @@ const getData = () => {
     var showName = document.querySelector("#getVal").value
     getShowDetails(showName)
 }
-
 async function getShowDetails(showName) {
     let resData = await fetch('https://api.tvmaze.com/singlesearch/shows?q=' + showName)
     let data = await resData.json()
