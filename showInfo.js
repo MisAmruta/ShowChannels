@@ -1,6 +1,6 @@
 const getData = () => {
     var showName = document.querySelector("#getVal").value
-    getShowDetails(input)
+    getShowDetails(showName)
 }
 
 async function getShowDetails(showName) {
