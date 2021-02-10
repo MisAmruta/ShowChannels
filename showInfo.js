@@ -4,7 +4,7 @@ const getData = () => {
 }
 
 async function getShowDetails(showName) {
-    let resData = await fetch('http://api.tvmaze.com/singlesearch/shows?q=' + showName)
+    let resData = await fetch('https://api.tvmaze.com/singlesearch/shows?q=' + showName)
     let data = await resData.json()
     // var output =  Object.values(data)[0] 
     console.log(data)
